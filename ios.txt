@@ -1,0 +1,2 @@
+1、/etc/bashrc 设置系统级别的环境变量    ~/.bash_profile  设置用户级别的环境变量
+2、UDID: 设备号

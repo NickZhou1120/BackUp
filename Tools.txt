@@ -1,0 +1,20 @@
+Git
+1、先拉取再提交推送
+2、遇到冲突先Stash到本地
+3、git cherry-pick  <commit_id> -n   用于合并提交到不同分支。
+4、git remote -v  查看当前git repository url地址 
+5、git reset --soft --hard  回滚本地提交
+6、git fetch origin  同步本地远程分支
+7、git gc --prune=now  清理git库
+8、git clone -b [branch name] --depth 1 [git地址]  
+9、git checkout -b  新建分支同时切换到分支
+Mono 
+1、格式化代码  Editor - Format - Format Document
+
+
+Jenkins
+
+Master/SlaveJ架构：相当于Server和Agent的概念
+
+Xcode
+1、安装command line命令：xcode-select --install 

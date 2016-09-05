@@ -1,0 +1,38 @@
+Type类
+
+Type.GetMethods(BindingFlags.Public)  
+返回表示为当前 MethodInfo 定义的匹配指定绑定约束的所有方法的 Type 对象数组。
+
+Type.GetProperties()  
+返回当前type的所有公共属性
+
+Marshal类
+
+GetFunctionPointerForDelegate(Delegate) 将委托转换为可从非托管代码调用的函数指针。
+
+内存池：是一种内存分配方式。
+
+Stopwatch:提供一组方法和属性，可用于准确的测量运行时间。
+
+IDisposable接口:
+提供一种用于释放非托管资源的机制,方法 Dispose():执行与释放或重置非托管资源关联的应用程序定义的任务。
+
+Default 关键字：
+值类型返回0，引用类型返回Null
+
+Params:
+使用params关键字可以指定采用数目可变的参数的方法参数
+
+EventArgs:
+表示包含事件数据的类的基类，并提供要用于不包含事件数据的事件的值。        
+
+ManualResetEvent:
+通知一个或多个正在等待的线程已发生事件。此类不能被继承。
+
+IPEndPoint:
+包含应用程序连接到主机上的服务所需的主机和本地或远程端口信息。
+
+IntPtr:用于表示指针或句柄的平台特定类型。
+
+DllImport:从非托管DLL导出的函数的必要调用信息。
+   

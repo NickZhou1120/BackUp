@@ -1,0 +1,14 @@
+1、Sed命令是利用script来处理文本文件。
+2、[-e filename] 如果filename存在，则为真。
+3、编辑完环境变量文件之后，source filename 生效。
+4、-ne检查两个数是否相等，不相等返回true
+5、-eq检查两个数是否相等，相等返回true
+6、export [变量名称]=[变量设置值]  用于设置或显示环境变量
+7、mkdir -p dirName  确保目录名称存在，不存在的就建一个
+8、tr `a-z` `A-Z` 把小写字母替换成大写
+9、source命令即点(.)命令，在当前shell下执行一切命令。
+   source /.bashrc  执行后bashrc的内容立即生效。
+10、Set -eu 执行脚本如果不为true，则停止执行。
+11、[-d filename] 如果filename存在且是一个目录。则为真。
+12、bash -x  filename  调试脚本
+13、var:=default ，若变量为空，可以使用 := 设置一个默认值。

@@ -1,0 +1,14 @@
+1、Lua异常处理机制：
+   非保护模式： 全部给Lua自身的PANIC函数处理
+   保护模式：可以人为的抛出来，让外层的程序显示Catch到。
+2、Lua 索引方式：
+   正数索引：栈底是1，从下往上递增
+   负数索引：栈顶是-1，从上往下递减
+3、Lua_gettop: 返回栈顶元素的索引。一般是正数索引，所以结果等于堆栈上的元素个数。
+4、Lua_getglobal: 将全局变量name里的值压入堆栈。
+5、Lua_atpanic:设置自定义panic函数。
+6、Lua_pushcclosur:像栈中压入一个C闭包。
+7、Lua_register:
+8、Luajit:采用C语言写的Lua的解释器的代码，所有的函数缺省会被jit编译到机器码。
+9、Lua标准库：
+10、LuaBind: 

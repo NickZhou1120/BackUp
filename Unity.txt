@@ -1,0 +1,20 @@
+1、[Head("xx")], 在检视面板中将字段进行分组。
+2、检视面板运行模式Copy组件，编辑器模式paste组件。
+3、EditorWindow: 创建编辑器窗口类
+4、Editor：UNITY编辑器扩展类
+5、EditorGUI：编辑器窗口布局类
+6、EditorGUILayout：自动编辑器窗口布局类
+7、OnInspectorGUI(),重新绘制Inspector布局
+8、大部分Unity API应只在主线程中调用，不能再构造函数或者字段初始化方法中调用Api,也不能再反序列化过程中调用Api.
+9、Unity3d 5.x AssetBundle打包
+10、预计算实时全局光照明
+11、LigghtMapping（光照贴图）: 从maya,3Dmax导入fbx模型，设置参数。
+12、Light Probes（灯光探测器）:
+    原理是在场景中的标记为探测器的静态点的位置采样光照，然后对相邻的几个光照探测器位置所采样的灯光照明进行差值。
+13、IK动画：反向动力学，就是子骨骼节点带动父骨骼节点运动。 控制IK的脚本必须添加到OnAnimatorIK方法中才会生效。
+14、Mecanim动画系统：因为骨骼结构的类似性，使得动画从一个类人骨架映射到另外一个类人骨架成为可能。
+15、Avatar: unity 导入模型时（.fbx,collada),选择Humanoid,然后apply，会生成Avatar文件。
+16、GI : unity 5.0采用了Enlighten,实时的全局光。
+17、RenderTexture: 在运行时创建和更新，需要指定摄像机渲染。
+18、ScriptableObject: 创建不需要附加到游戏物体的对象，一般用来存储u3d无法打包的对象，利用它可以将对象打包为asstbundle或者.asset文件。
+19、Unity将Assets目录中的语言分开编译，plugins子目录之外的C#脚本编译到Assembly-CSharp.dll,而Plugins及其子目录中的脚本放置在Assembly-CSharp-firstpass.dll中。
