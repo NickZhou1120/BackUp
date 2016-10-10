@@ -18,3 +18,8 @@ Master/SlaveJ架构：相当于Server和Agent的概念
 
 Xcode
 1、安装command line命令：xcode-select --install 
+
+Cocoapods
+1、使用homebrew安装cocoapos
+2、工程中新建Podfile
+3、pod install 安装依赖库
