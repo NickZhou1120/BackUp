@@ -23,3 +23,7 @@
     骨骼动画：
     骨骼：用以控制蒙皮的一种抽象的概念,是若干骨头成树状的集合。
     蒙皮：被骨骼控制，并显示在外的因素，其实就是顶点、法线和纹理坐标。
+22、Spine: 美术通过spine编辑器导出三个文件：
+           Unity新建prefab,add  spine组件选择spine资源使用。
+23、AddComponentMenu ：用来更好的组织组件菜单。
+24、SerializeField ：强制Unity去序列化一个私有域。

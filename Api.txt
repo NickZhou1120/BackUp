@@ -35,4 +35,6 @@ IPEndPoint:
 IntPtr:用于表示指针或句柄的平台特定类型。
 
 DllImport:从非托管DLL导出的函数的必要调用信息。
+
+volatile: 多用于多线程环境，当一个变量定义为volatile时，读取这个变量的值时候每次都是从momery里面读取而不是从cache读。
    

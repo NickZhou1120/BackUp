@@ -11,3 +11,12 @@
    3、实现jni
    4、编译jni,编译.c生成so
    5、java层调用
+
+8、安卓老机器签名需带算法, keystrore指定md5或者rsa进行加密。
+9、OAth2.0: 是一个关于授权的开放网络标准.
+10、Application类是Android框架的一个系统组件，当android程序启动时系统会创建一个Application对象，用了存储系统的一些信息。
+11、类的全路径是：包名+类名。
+12、Android keystore作用：
+    1、升级App:用户在升级一款已经安装过的App时，如果程序修改来自同一来源，则允许安装，否则提醒签名不一致。
+	2、权限检查：
+13、Https： 
