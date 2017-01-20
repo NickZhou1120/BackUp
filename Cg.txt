@@ -76,5 +76,5 @@ Material:
         1、UVS：表示在贴图上画出的三角形。
         2、tiling：表示UV坐标的缩放倍数。
         3、offset：表示UV坐标的起始位置(0,1)。
-		4、TRANSFORM_TEX：主要作用是拿顶点的uv去和材质球的tiling、offset做运算
+	    4、TRANSFORM_TEX：主要作用是拿顶点的uv去和材质球的tiling、offset做运算
 		

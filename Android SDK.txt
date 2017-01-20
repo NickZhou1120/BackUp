@@ -20,3 +20,16 @@
     1、升级App:用户在升级一款已经安装过的App时，如果程序修改来自同一来源，则允许安装，否则提醒签名不一致。
 	2、权限检查：
 13、Https： 
+14、Apk去签名：zip -d $APK META-INF/\*
+15、Android 屏幕旋转原理: 
+    1、禁止旋转：
+	   android:screenOrientation="landscape"  //横屏  
+	   android:screenOrientation="portrait"   //竖屏
+	2、Activity 旋转但不销毁和重启
+	   重载函数OnConfigurationChanged 
+       @Override
+       public voidonConfigurationChanged(Configuration newConfig) {
+              super.onConfigurationChanged(newConfig);
+       }
+	3、重力感应:
+	   android:screenOrientation="sensorlandscape"  

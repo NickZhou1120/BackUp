@@ -9,7 +9,29 @@
 5、Lua_atpanic:设置自定义panic函数。
 6、Lua_pushcclosur:像栈中压入一个C闭包。
 7、Lua_register:
-8、Luajit:采用C语言写的Lua的解释器的代码，所有的函数缺省会被jit编译到机器码。
+8、Luajit:采用C语言写的Lua的解释器的代码，针对Lua语言的一个JIT编译器。
 9、Lua标准库：
 10、LuaBind: 
 11、Table是一个关联数组，这个数组不仅仅以数字做索引，除了nil和Nan之外的所有Lua值都可以做索引。表内不存在的键，都对应着值nil
+12、userdata: 类型允许将C中的数据保存在Lua变量中，用户数据类型的值是一个内存块，用两种数据类型：完全用户数据，轻量用户数据。
+13、Lua中，一个全局变量未被赋值前默认值为nil。
+
+
+
+
+
+
+
+tolua
+1、tolua自动映射C/C++基本类型到lua的基本类型。
+   char、int、float和double类型被映射为lua的number。
+   char*被映射为lua中的string。
+   void*被映射为lua中的userdata。
+   package文件里的所有其他类型都会被认为是用户自定义类型。
+2、两种绑定常量的方式：define和enum。
+   #define NAME [VALUE]
+3、绑定外部变量
+      
+   
+
+C Lua  Luajit ulua tolua

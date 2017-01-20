@@ -9,9 +9,12 @@ Git
 8、git clone -b [branch name] --depth 1 [git地址]  
 9、git checkout -b  新建分支同时切换到分支
 10、git remote set-url origin 远程仓储地址
+11、git stash 保存当前的工作区到暂存区
+12、git stash list 查看暂存区
+12、git stash apply index 应用某次暂存
+
 Mono 
 1、格式化代码  Editor - Format - Format Document
-
 
 Jenkins
 

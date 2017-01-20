@@ -27,3 +27,10 @@
            Unity新建prefab,add  spine组件选择spine资源使用。
 23、AddComponentMenu ：用来更好的组织组件菜单。
 24、SerializeField ：强制Unity去序列化一个私有域。
+25、Application.dataPath: Contains the path to the game data folder。
+26、Sprite:基于Texture2D得到的图像，此类通过游戏对象上面的SpriteRenderer组件应用并实际显示该图像。
+27、SpriteRenderer: 渲染一个精灵，用于2D图像。
+28、Animator 的Apply Root Motion,勾选后角色的transform不能通过脚本直接赋值，而是通过动画的运动来改变。
+29、[RequireComponent (typeof(componet))]:需要的组件将会被添加到Gameobject上。
+30、[SerializeField] 强制Unity去序列化一个私有域。
+31、Unity 获取mono版本：反射
