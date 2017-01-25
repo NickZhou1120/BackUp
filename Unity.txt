@@ -33,4 +33,5 @@
 28、Animator 的Apply Root Motion,勾选后角色的transform不能通过脚本直接赋值，而是通过动画的运动来改变。
 29、[RequireComponent (typeof(componet))]:需要的组件将会被添加到Gameobject上。
 30、[SerializeField] 强制Unity去序列化一个私有域。
-31、Unity 获取mono版本：反射
+31、Unity 获取mono版本：反射。
+32、
