@@ -2,3 +2,6 @@
 2、UDID: 设备号
 3、 __IPHONE_OS_VERSION_MAX_ALLOWED :编译环境判断，判断当前开发时使用的SDK版本。
 4、plist:  Property List,属性列表文件,xml格式。 
+5、Metal: 是一个兼顾图形与计算功能的，面向底层、低开销的硬件加速应用程序接口，支持IOS设备。
+6、UDID: 设备唯一标识，苹果禁止获取UIDI。
+   UUID: 通用唯一识别码。

@@ -33,3 +33,5 @@
        }
 	3、重力感应:
 	   android:screenOrientation="sensorlandscape"  
+16、内置存储：手机内置存储空间。
+    SD卡：应用扩展存储。

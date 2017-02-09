@@ -23,12 +23,16 @@ lua :月亮，嵌入式脚本语言。
 
 
 
-tolua
+tolua 
+
+tolua如何工作：创建一个package文件(头文件),列举出想导出到lua环境中的常量、变量、函数、类以及方法。然后tolua会解析该文件并且创建自动绑定C/C++代码到lua的C/C++文件。
+tolua如何使用：由两部分代码组成，可执行程序和静态库。可执行程序用于解析，读入package文件，输出C/C++代码。该代码提供了从lua层访问C/C++层的绑定。
+
 1、tolua自动映射C/C++基本类型到lua的基本类型。
    char、int、float和double类型被映射为lua的number。
    char*被映射为lua中的string。
    void*被映射为lua中的userdata。
-   package文件里的所有其他类型都会被认为是用户自定义类型。
+   package文件里的所有其他类型都会被认为是用户自定义类型，映射到userdata类型。
 2、两种绑定常量的方式：define和enum。
    #define NAME [VALUE]
 3、绑定外部变量

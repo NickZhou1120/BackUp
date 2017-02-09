@@ -34,4 +34,18 @@
 29、[RequireComponent (typeof(componet))]:需要的组件将会被添加到Gameobject上。
 30、[SerializeField] 强制Unity去序列化一个私有域。
 31、Unity 获取mono版本：反射。
-32、
+32、Mesh Filter:take a mesh from your assets and passes it to the mesh renderer。
+                
+33、Mesh Renderer:take the geometry from the mesh filter。
+34、Cast Shadows：产生阴影。
+35、ACGN: Animation 
+          Comic(漫画)
+          Game
+          Novel(小说)
+36、Unity使用内存：
+    1、程序代码：包括Unity引擎库，游戏代码。
+    2、托管堆：Mono使用的内存，用来存放类的实例。
+    3、本地堆栈：引擎进行申请和操作的地方，比如贴图，音效，关卡数据等。
+37、Goolge VR:
+38、Office Open XML: Office 2007产品开发的技术规范，现已成为国际文档格式标准。
+    
