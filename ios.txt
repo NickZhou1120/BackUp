@@ -5,3 +5,7 @@
 5、Metal: 是一个兼顾图形与计算功能的，面向底层、低开销的硬件加速应用程序接口，支持IOS设备。
 6、UDID: 设备唯一标识，苹果禁止获取UIDI。
    UUID: 通用唯一识别码。
+7、BitCode: Xcode将程序编译为一个中间表现形式(bitecode)，然后App Store会再将这个bitcode编译为可执行的64位或32位。
+8、Xcode 方法：
+   +(viod) 类方法
+   -(void) 对象方法

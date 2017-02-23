@@ -16,7 +16,9 @@
 15、Avatar: unity 导入模型时（.fbx,collada),选择Humanoid,然后apply，会生成Avatar文件。
 16、GI : unity 5.0采用了Enlighten,实时的全局光。
 17、RenderTexture: 在运行时创建和更新，需要指定摄像机渲染。
-18、ScriptableObject: 创建不需要附加到游戏物体的对象，一般用来存储u3d无法打包的对象，利用它可以将对象打包为asstbundle或者.asset文件。
+18、ScriptableObject: 
+    1、创建不需要附加到游戏物体的对象，一般用来存储u3d无法打包的对象，利用它可以将对象打包为asstbundle或者.asset文件。
+	2、存储数据。
 19、Unity将Assets目录中的语言分开编译，plugins子目录之外的C#脚本编译到Assembly-CSharp.dll,而Plugins及其子目录中的脚本放置在Assembly-CSharp-firstpass.dll中。
 20、Canvas画布：Screen Space-Overlay 始终显示在屏幕最前方  Screen Space-Camera :绑定到指定摄像机。
 21、帧动画原理：将每帧所需要的所有顶点(顶点位置、法线、纹理坐标)等信息全部存储下来，在渲染的时候逐帧播放或差值播放。
@@ -34,8 +36,7 @@
 29、[RequireComponent (typeof(componet))]:需要的组件将会被添加到Gameobject上。
 30、[SerializeField] 强制Unity去序列化一个私有域。
 31、Unity 获取mono版本：反射。
-32、Mesh Filter:take a mesh from your assets and passes it to the mesh renderer。
-                
+32、Mesh Filter:take a mesh from your assets and passes it to the mesh renderer。               
 33、Mesh Renderer:take the geometry from the mesh filter。
 34、Cast Shadows：产生阴影。
 35、ACGN: Animation 
@@ -48,4 +49,15 @@
     3、本地堆栈：引擎进行申请和操作的地方，比如贴图，音效，关卡数据等。
 37、Goolge VR:
 38、Office Open XML: Office 2007产品开发的技术规范，现已成为国际文档格式标准。
-    
+39、AssetDatabase: 编辑器类,An Interface for accessing assets and performing operations on assets。
+40、webp格式：有损压缩图片格式，Google开发的一种旨在加快图片加载速度的图片格式，压缩体积只有JPEG的2/3。
+41、EditorUtility：编辑器类，调用系统API操作文件夹或者文件。
+42、Awake:生命周期中只执行一次，在场景中所有对象初始化之后执行。
+43、Application.targetFrameRate：命令游戏尝试以一个特定的帧率渲染，不保证帧率，会因不同平台而波动。
+44、QualitySettings.antiAliasing：抗锯齿
+45、QualitySettings.vSyncCount:垂直同步数。
+46、Event System:
+47、Standalone Input Module：电脑控制组.
+48、Touch Input Module：触摸输入组。
+49、Graphic Raycaster：图像射线检测。
+50、MenuItem(string itemname,bool isvalidFcuntion,int priotiry):isvalidFcuntion 是否验证函数。
