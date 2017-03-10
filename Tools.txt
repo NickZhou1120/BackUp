@@ -27,3 +27,8 @@ Cocoapods
 1、使用homebrew安装cocoapos
 2、工程中新建Podfile
 3、pod install 安装依赖库
+
+
+Homebrew 
+1、brew list：查看已安装软件
+2、brew search:查看所有软件

@@ -23,6 +23,7 @@
 20、Canvas画布：Screen Space-Overlay 始终显示在屏幕最前方  Screen Space-Camera :绑定到指定摄像机。
 21、帧动画原理：将每帧所需要的所有顶点(顶点位置、法线、纹理坐标)等信息全部存储下来，在渲染的时候逐帧播放或差值播放。
     骨骼动画：
+	骨头：每块骨头分别与若干数量的蒙皮顶点关联。
     骨骼：用以控制蒙皮的一种抽象的概念,是若干骨头成树状的集合。
     蒙皮：被骨骼控制，并显示在外的因素，其实就是顶点、法线和纹理坐标。
 22、Spine: 美术通过spine编辑器导出三个文件：
@@ -61,3 +62,20 @@
 48、Touch Input Module：触摸输入组。
 49、Graphic Raycaster：图像射线检测。
 50、MenuItem(string itemname,bool isvalidFcuntion,int priotiry):isvalidFcuntion 是否验证函数。
+51、Unity编译如只armv7，plugin下面lib库也应该只支持armv7。
+52、Unity 版本构建之路：
+    1、手工时代
+	2、工业时代
+	3、自动化时代
+	4、自动化时代2.0
+53、Texture.anisoLevel:贴图的各向异性过滤等级，值范围1-9,1等于没有过滤9等于完全过滤。
+54、Texture Type；Unity 纹理类型。
+55、Pixels Per Unit：意思在Sprite中，世界坐标系中的一单元有几个像素组成
+56、帧数：帧生成数量的简称
+    帧：静止的图像
+57、TexturePacker:	
+58、Cast Shadows：投射阴影。
+59、3D模型动画基本原理：模型中的各顶点的位置随时间变化。
+    1、Morph动画：
+	2、关节动画:关节动画的模型不是一个整体的Mesh，而是分成很多部分(Mesh)，通过一个父子层次结构将这些分散的Mesh组织在一起。
+	3、骨骼蒙皮动画:骨骼 + 蒙皮

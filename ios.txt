@@ -9,3 +9,8 @@
 8、Xcode 方法：
    +(viod) 类方法
    -(void) 对象方法
+9、@interface 类名:父类名;
+   @Property() 声明变量
+   声明方法
+   @end
+   
