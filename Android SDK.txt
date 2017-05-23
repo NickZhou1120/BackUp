@@ -36,3 +36,4 @@
 16、内置存储：手机内置存储空间。
     SD卡：应用扩展存储。
 17、Unity Android jar包文件不能重复，且工程文件只能存放于Plugin/Android 根目录。
+18、Android 沉浸式: 本质就是全屏化。
