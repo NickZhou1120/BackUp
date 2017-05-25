@@ -11,7 +11,11 @@ Git
 10、git remote set-url origin 远程仓储地址
 11、git stash 保存当前的工作区到暂存区
 12、git stash list 查看暂存区
-12、git stash apply index 应用某次暂存
+13、git stash apply index 应用某次暂存
+14、git 处理冲突
+    1、直接编辑冲突文件解决冲突
+	2、git reset --hard  head 冲突文件
+	   git checkout 冲突文件
 
 Mono 
 1、格式化代码  Editor - Format - Format Document

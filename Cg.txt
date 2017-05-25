@@ -54,6 +54,7 @@ Premultiplied Alpha 　
 TEXCOORD0  纹理坐标
 Lighting On|Off   定义材质块中的设定是否有效，你必须使用Lighting On 命令开启光照
 SeparateSpecular On | Off  添加高光光照到着色器通道末尾，因此贴图对高光没有影响，只在光照开启时有效
+UV:贴图影射到模型表面的数据，U和V分别是图片在显示器水平、垂直方向上的坐标，取值一般都是0-1。
 
 
 光照模型：

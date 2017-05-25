@@ -1,13 +1,9 @@
 1、[Head("xx")], 在检视面板中将字段进行分组。
-2、检视面板运行模式Copy组件，编辑器模式paste组件。
-3、EditorWindow: 创建编辑器窗口类
-4、Editor：UNITY编辑器扩展类
-5、EditorGUI：编辑器窗口布局类
-6、EditorGUILayout：自动编辑器窗口布局类
+3、EditorWindow: 创建编辑器窗口类   Editor：UNITY编辑器扩展类  EditorGUI：编辑器窗口布局类   EditorGUILayout：自动编辑器窗口布局类
 7、OnInspectorGUI(),重新绘制Inspector布局
 8、大部分Unity API应只在主线程中调用，不能再构造函数或者字段初始化方法中调用Api,也不能再反序列化过程中调用Api.
 9、Unity3d 5.x AssetBundle打包
-10、预计算实时全局光照明
+10、预计算实时全局光照明（Enlight）
 11、LigghtMapping（光照贴图）: 从maya,3Dmax导入fbx模型，设置参数。
 12、Light Probes（灯光探测器）:
     原理是在场景中的标记为探测器的静态点的位置采样光照，然后对相邻的几个光照探测器位置所采样的灯光照明进行差值。
@@ -45,10 +41,15 @@
 )
           Game
           Novel(小说)
-36、Unity使用内存：
-    1、程序代码：包括Unity引擎库，游戏代码。
-    2、托管堆：Mono使用的内存，用来存放类的实例。
-    3、本地堆栈：引擎进行申请和操作的地方，比如贴图，音效，关卡数据等。
+36、Unity使用的内存分为三种，优化方法：
+    1、程序代码：包括Unity引擎库，游戏代码，编译后在设备中运行，并占用一定内存。
+	   优化方法：1、减少打包时的引用库。
+	             2、优化build设置(.net 库)
+    2、托管堆：Mono使用的内存，用来存放类的实例(new生成的列表，实例中各种声明的变量)，定时的使用垃圾回收。
+	   优化方法：托管堆中存储的是代码中申请的内存，一般就是new或者Instantiate两种方法，在接收到alloc请求后，托管堆新生成对象实例、分配内存。
+	             尽可能早的时间除掉引用，这样GC才能正确的把不需要的内存清理出来。
+    3、本机堆栈：Unity引擎进行申请和操作的地方，比如贴图，音效，关卡数据等,Unity使用了自己的一套内存管理机制。
+	   基本理念是(需要时加载，没有引用时卸载)。
 37、Goolge VR:
 38、Office Open XML: Office 2007产品开发的技术规范，现已成为国际文档格式标准。
 39、AssetDatabase: 编辑器类,An Interface for accessing assets and performing operations on assets。
@@ -86,3 +87,28 @@
     1、内存：
 	   System.ExecutableAndDlls：系统可执行程序和Dll,通过修改Stripping Level来调节。
 	   ManagedHeap:托管堆使用大小，控制在20MB以内。
+63、旋转:
+    1、矩阵旋转：使用4*4的 矩阵表示绕任意轴旋转时的变换矩阵。
+	   优点：旋转轴可以是任何向量
+	   缺点：旋转变换矩阵使用了4*4=16元素，增加算法运算量。
+    2、欧拉旋转：在旋转时，按照一定的顺序每个轴旋转一定角度。
+    万向节锁原因：因为欧拉旋转时按顺序旋转坐标轴的，当旋转中某些坐标重合就会发生万向节锁，失去一个方向上的选择能力。
+	3、四元数本质上是一种高阶复数，是一个四维空间。实数加上三个元素i、j、k组成，有如下关系：i2=j2=k2=ijk=-1
+	   绕单位向量(x,y,z)表示的轴旋转θ,旋转公式：q=((x,y,z)sinθ2,cosθ2)
+	   优点:避免万向节锁，可绕任意过原点的向量旋转，可提供球面平滑插值
+	   缺点：比欧拉角复杂，多了一个维度。
+61、EditorUtility.SetDirty：标记目标物体已改变。MonoBehaviour或ScriptableObject不自动做这个，因此如果你想值被保存，必须调用SetDirty
+62、位
+    字节：8个二进制位构成1个字节(Bytes)
+    KB: 1024个字节	
+63、Draw Call: Unity生成一帧画面的处理过程，引擎经过可见性测试，确定摄像机可以看到的物体，然后把这些物体的顶点(顶点位置、法线、UV等)、索引、变换(旋转、缩放以及摄像机的位置)相关光源、纹理、渲染方式等数据准备好，然后通知图像API开始绘制。
+               Unity中每次引擎准备数据并通知GPU的过程称为一次Draw Call。
+64、Batched:其实是Drall Call的另外一种称呼。每一次Drall Call是CPU把一个Batched里的数据传输给GPU，由GPU绘制到屏幕上。因此Batched越多需要传输的数据越多，产生的Draw Call也会越多。
+65、UGUI Best fit:动态调整字体大小适应UI布局，代价是会把文字生成图元保存到atlas，增加额外生成时间，使字体对应的atlas变大。			   
+                
+	   
+	   
+	   
+	   
+UGUI:
+2、Canvas Scaler	   
