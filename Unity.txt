@@ -14,7 +14,7 @@
 17、RenderTexture: 在运行时创建和更新，需要指定摄像机渲染。
 18、ScriptableObject: 
     1、创建不需要附加到游戏物体的对象，一般用来存储u3d无法打包的对象，利用它可以将对象打包为asstbundle或者.asset文件。
-	2、存储数据。
+    2、存储数据。
 19、Unity将Assets目录中的语言分开编译，plugins子目录之外的C#脚本编译到Assembly-CSharp.dll,而Plugins及其子目录中的脚本放置在Assembly-CSharp-firstpass.dll中。
 20、Canvas画布：Screen Space-Overlay 始终显示在屏幕最前方  Screen Space-Camera :绑定到指定摄像机。
 21、帧动画原理：将每帧所需要的所有顶点(顶点位置、法线、纹理坐标)等信息全部存储下来，在渲染的时候逐帧播放或差值播放。
@@ -37,7 +37,8 @@
 33、Mesh Renderer:take the geometry from the mesh filter。
 34、Cast Shadows：产生阴影。
 35、ACGN: Animation 
-          Comic(漫画)
+          Comic(漫画
+)
           Game
           Novel(小说)
 36、Unity使用的内存分为三种，优化方法：
@@ -79,8 +80,14 @@
 59、3D模型动画基本原理：模型中的各顶点的位置随时间变化。
     1、Morph动画：
 	2、关节动画:关节动画的模型不是一个整体的Mesh，而是分成很多部分(Mesh)，通过一个父子层次结构将这些分散的Mesh组织在一起。
-	3、骨骼蒙皮动画:骨骼 + 蒙皮。
-60、旋转:
+	3、骨骼蒙皮动画:骨骼 + 蒙皮
+60、Alpha Test:	透明度测试。
+61、ZWrite:On/Off,默认On,代表是否要将像素的深度写入深度缓存中。
+62、Profile
+    1、内存：
+	   System.ExecutableAndDlls：系统可执行程序和Dll,通过修改Stripping Level来调节。
+	   ManagedHeap:托管堆使用大小，控制在20MB以内。
+63、旋转:
     1、矩阵旋转：使用4*4的 矩阵表示绕任意轴旋转时的变换矩阵。
 	   优点：旋转轴可以是任何向量
 	   缺点：旋转变换矩阵使用了4*4=16元素，增加算法运算量。

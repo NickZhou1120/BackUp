@@ -52,6 +52,7 @@
 17、Func(T,TResult)
 18、URI:命名空间system，提供统一资源标识符 (URI) 的对象表示形式和对 URI 各部分的轻松访问。
 19、Marshal：提供一个方法集合，用于分配非托管内存、复制非托管内存块、将托管类型转换为非托管类型。
+20、float比较，Math.abs(float1-float2)<0.000001
 	
 
 
