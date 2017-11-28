@@ -46,6 +46,7 @@ RenderType标签，unity 可以运行时替换符合特定RenderType的所有Sha
      2、Transparent, 绝大部分透明物体都使用这个。
      3、Background,天空盒都使用这个。
      4、Overlay,GUI、镜头光晕都使用这个。
+ZTest	 
 
 Cull off 表示双面都渲染
 Cull back 表示不渲染背面。
