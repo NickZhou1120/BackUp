@@ -116,7 +116,8 @@
     2、(压缩预制在游戏包内的资源)LZ4：相比较LZMA会生成更大的压缩文件，优点是使用时不需要整体压缩。
             基于chunk的算法，加载对象时只有相应的chunk会被解压。	
 68、MSAA；多重采样抗锯齿，原理是寻找出物体边缘部分的像素，然后再把画缩放到当前的显示器上。
-70、                
+70、Frame Debuger:
+    安卓真机调试：adb forward tcp:34999 localabstract:Unity-com.pwrd.projecta                 
 	   
 	   
 	   
