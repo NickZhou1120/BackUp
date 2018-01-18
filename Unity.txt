@@ -124,3 +124,7 @@
 	   
 UGUI:
 2¡¢Canvas Scaler	   
+
+
+Link:  
+1¡¢http://geekfaner.com/unity/index.html
