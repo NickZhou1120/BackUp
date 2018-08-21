@@ -118,7 +118,19 @@
 68、MSAA；多重采样抗锯齿，原理是寻找出物体边缘部分的像素，然后再把画缩放到当前的显示器上。
 70、Frame Debuger:
     安卓真机调试：adb forward tcp:34999 localabstract:Unity-com.pwrd.projecta                 
-	   
+71、获取安卓OpenGLES版本
+    ActivityManager activityManager = (ActivityManager) getSystemService(Context.ACTIVITY_SERVICE);
+    ConfigurationInfo configurationInfo = activityManager.getDeviceConfigurationInfo();
+    Log.e(TAG, "version: " + Integer.toHexString(configurationInfo.reqGlEsVersion));	
+72、DrawCall定义：一个drawcall,等于呼叫一次DrawIndexedPrimitive(DX) or glDrawElements(OGL),等于一个Batch
+                  在DirectX或OpenGL里，对不同物件指定不同贴图或不同Shader的描述,就会呼叫两次Draw Call。
+73、Batch,其实也是DrawCall的另一种称呼。可以理解为每一次的DrawCall会产生一个Batch，而Batch里装的是物件顶点资料。
+    Batch由CPU通过驱动程序将顶点资料送往GPU，GPU接手后将物件画在画面上。
+74、先画不透明在再画半透明
+    不透明 先画近的在画远的
+    透明的 先画远的在画近的
+75、Unity 新版本 IOS AssetBundle依赖打包优化切线 
+76、Billboards技术原理：计算出来一个始终朝向摄像机的面片，可以在CPU里计算，也可以在GPU里实现。 
 	   
 	   
 	   
